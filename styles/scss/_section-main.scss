@@ -1,0 +1,35 @@
+.page-section.page-section--main {
+  padding: 3em 1em 2em 1em;
+
+  @include min-width($alias: small) {
+    padding-top: 4em;
+    padding-bottom: 3em;
+  }
+}
+
+.site-title {
+  letter-spacing: -1px;
+
+  display: inline-block;
+
+  border-bottom: 2px solid $color-primary;
+}
+
+.site-sub-title {
+  font-size: 1em;
+  font-weight: 400;
+
+  margin-bottom: 2.5em;
+}
+
+.event-location-and-time {
+  font-weight: 600;
+  /* letter-spacing: -1px; */
+}
+
+.event-location,
+.event-time {
+  display: block;
+
+  margin-bottom: 0.875em;
+}
