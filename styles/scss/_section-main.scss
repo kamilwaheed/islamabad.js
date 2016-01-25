@@ -5,6 +5,11 @@
     padding-top: 4em;
     padding-bottom: 3em;
   }
+
+  @include min-width($alias: medium) {
+    padding-top: 6em;
+    padding-bottom: 5em;
+  }
 }
 
 .site-title {
@@ -20,11 +25,14 @@
   font-weight: 400;
 
   margin-bottom: 2.5em;
+
+  @include min-width($alias: medium) {
+    font-size: 1.5em;
+  }
 }
 
 .event-location-and-time {
   font-weight: 600;
-  /* letter-spacing: -1px; */
 }
 
 .event-location,
@@ -32,4 +40,8 @@
   display: block;
 
   margin-bottom: 0.875em;
+
+  @include min-width($alias: medium) {
+    margin-bottom: 1em;
+  }
 }

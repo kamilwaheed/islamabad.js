@@ -6,6 +6,10 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include min-width($alias: medium) {
+    font-size: 1.5em;
+  }
 }
 
 strong { font-weight: 600; }
@@ -25,6 +29,10 @@ h1 {
   @include min-width($alias: small) {
     font-size: $font-size-alpha-large;
   }
+
+  @include min-width($alias: medium) {
+    font-size: $font-size-alpha-vlarge;
+  }
 }
 
 h2 {
@@ -32,6 +40,10 @@ h2 {
 
   @include min-width($alias: small) {
     font-size: $font-size-beta-large;
+  }
+
+  @include min-width($alias: medium) {
+    font-size: $font-size-beta-vlarge;
   }
 }
 
@@ -41,6 +53,10 @@ h3 {
   @include min-width($alias: small) {
     font-size: $font-size-gamma-large;
   }
+
+  @include min-width($alias: medium) {
+    font-size: $font-size-gamma-vlarge;
+  }
 }
 
 h4 {
@@ -48,6 +64,10 @@ h4 {
 
   @include min-width($alias: small) {
     font-size: $font-size-delta-large;
+  }
+
+  @include min-width($alias: medium) {
+    font-size: $font-size-delta-vlarge;
   }
 }
 

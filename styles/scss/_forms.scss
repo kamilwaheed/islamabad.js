@@ -34,4 +34,8 @@ button,
   font-size: 1em;
 
   margin-top: 1em;
+
+  @include min-width($alias: medium) {
+    font-size: 1.2em;
+  }
 }

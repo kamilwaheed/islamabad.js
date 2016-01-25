@@ -24,6 +24,10 @@ body {
   @include min-width($alias: small) {
     padding: 3em 1em;
   }
+
+  @include min-width($alias: medium) {
+    padding: 6em 1em;
+  }
 }
 
 .page-section__title {
@@ -34,9 +38,18 @@ body {
     margin-bottom: 1em;
     font-size: $font-size-gamma-large;
   }
+
+  @include min-width($alias: medium) {
+    margin-bottom: 1em;
+    font-size: $font-size-gamma-vlarge;
+  }
 }
 
 .page-section__content {
   max-width: 500px;
   margin: auto;
+
+  @include min-width($alias: medium) {
+    max-width: 800px;
+  }
 }

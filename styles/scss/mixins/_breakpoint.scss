@@ -2,7 +2,7 @@
 
 $breakpoints: (
   small: 480px + 1px,
-  medium: 640px + 1px
+  medium: 1200px + 1px
 );
 
 @mixin min-width($min-width: null, $alias: null) {
