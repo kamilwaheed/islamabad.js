@@ -1,8 +1,11 @@
 # islamabad.js
 
-```
+```bash
+# first
 npm install
 
-npm run dev # to run Browsersync for compiling SASS
-npm run build # to get freshly baked CSS
+# then
+npm run dev # to run Browsersync for compiling SASS during development
+# or
+npm run build # to get freshly baked CSS for production
 ```
