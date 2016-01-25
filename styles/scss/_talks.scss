@@ -51,7 +51,7 @@ input[type="submit"].talk__action-vote-submit {
   font-size: 0.75em;
 
   @include min-width($alias: medium) {
-    font-size: 1.5em;
+    font-size: 1em;
   }
 }
 
