@@ -15,7 +15,7 @@
       "title": "Managing Application State with Redux",
       "by": "Kamil Waheed",
       "byUrl": "https://twitter.com/kamilwaheed",
-      "description": "We discuss how to do state transitions through pure functions only.\n\nWe look into the utilities Redux provides for managing application state, and how it sits nicely next to React.js.\n\nWe also discuss how managing state in a functional manner can lead to better quality UI, and lesser cognitive load."
+      "description": "We discuss keeping large application state in a single store and handling state transitions through pure functions only.\n\nWe look into the utilities Redux provides for managing application state, and how it sits nicely next to React.js.\n\nWe also discuss how managing state in a functional manner can lead to better quality UI, and lesser cognitive load."
     }
   ]
 }
