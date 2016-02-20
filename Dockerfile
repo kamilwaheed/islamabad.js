@@ -14,6 +14,9 @@ WORKDIR /src
 # Install app dependencies
 RUN cd /src; npm install
 
+# Build app
+RUN cd /src; npm run build
+
 # All set!
 EXPOSE 3000
 CMD ["npm", "start"]
