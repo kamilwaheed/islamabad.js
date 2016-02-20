@@ -18,5 +18,5 @@ RUN cd /src; npm install
 RUN cd /src; npm run build
 
 # All set!
-EXPOSE 3000
+EXPOSE 8000
 CMD ["npm", "start"]
