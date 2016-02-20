@@ -1,0 +1,55 @@
+html {font-size: 1em;}
+
+body {
+  background-color: white;
+  font-family: $font-secondary;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+.page-section {
+  padding: 2em 1.5em;
+
+  text-align: center;
+
+  &:nth-child(2n + 1) {
+    background: $color-gray;
+  }
+
+  &:nth-child(2n) {
+    background: $color-white;
+  }
+
+  @include min-width($alias: small) {
+    padding: 3em 1em;
+  }
+
+  @include min-width($alias: medium) {
+    padding: 6em 1em;
+  }
+}
+
+.page-section__title {
+  margin-top: 0;
+  font-size: $font-size-gamma;
+
+  @include min-width($alias: small) {
+    margin-bottom: 1em;
+    font-size: $font-size-gamma-large;
+  }
+
+  @include min-width($alias: medium) {
+    margin-bottom: 1em;
+    font-size: $font-size-gamma-vlarge;
+  }
+}
+
+.page-section__content {
+  max-width: 500px;
+  margin: auto;
+
+  @include min-width($alias: medium) {
+    max-width: 800px;
+  }
+}

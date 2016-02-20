@@ -1,0 +1,11 @@
+a,
+a:visited {
+  color: $color-link;
+
+  transition: color 0.1s;
+}
+
+a:hover,
+a:active {
+  color: $color-link-hover;
+}

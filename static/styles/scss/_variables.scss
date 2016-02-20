@@ -1,0 +1,65 @@
+///*------------------------------*\
+//    VARIABLES
+//\*------------------------------*/
+ 
+///* colors */
+
+$color-black: #333;
+
+$color-gray: #F0F3F3;
+$color-gray-2: #E0E3E3;
+
+$color-white: #FDFDFD;
+$color-white-2: #F2F6F6;
+$color-white-3: #F3F6F6;
+
+$color-yellow: #F0DB4F;
+$color-js-yellow: $color-yellow;
+
+$color-yellow-2: #CEBD45;
+$color-yellow-3: #F0DB4F;
+
+$color-red: #aa1133;
+
+$color-primary: $color-js-yellow;
+
+$color-link: $color-yellow-2;
+$color-link-hover: $color-yellow-3;
+
+$color-error: $color-red;
+
+
+///* borders */
+
+$border-color: $color-gray-2;
+$border-radius: 4px;
+
+$default-border: 1px solid $border-color;
+
+
+///* fonts */
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Anonymous Pro", mono-space;
+
+
+///* font sizes - scale: 1.125 major second - type-scale.com */
+
+$font-size-alpha: 1.602em;
+$font-size-beta: 1.424em;
+$font-size-gamma: 1.266em;
+$font-size-delta: 1.125em;
+
+///* font sizes - scale: 1.250 major third - type-scale.com */
+
+$font-size-alpha-large: 2.441em;
+$font-size-beta-large: 1.953em;
+$font-size-gamma-large: 1.563em;
+$font-size-delta-large: 1.25em;
+
+///* font sizes - scale: 1.414 augmented fourth - type-scale.com */
+
+$font-size-alpha-vlarge: 3.998em;
+$font-size-beta-vlarge: 2.827em;
+$font-size-gamma-vlarge: 1.999em;
+$font-size-delta-vlarge: 1.414em;

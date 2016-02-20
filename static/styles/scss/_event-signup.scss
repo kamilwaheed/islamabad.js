@@ -1,0 +1,117 @@
+.page-section--signup {
+  
+}
+
+.signup-form {
+  max-width: 320px;
+  margin: auto;
+
+  @include min-width($alias: medium) {
+    max-width: 500px;
+  }
+
+  input[type="email"] {
+    width: 100%;
+
+    @include min-width($alias: medium) {
+      font-size: 1.5em;
+
+      margin: 1em 0;
+    }
+  }
+
+  .signup-form-state {
+    display: none;
+  }
+
+  &.signup-form--normal {
+    .signup-form-state--normal {
+      display: block;
+    }
+  }
+
+  &.signup-form--signing-up {
+    .signup-form-state--normal {
+      display: block;
+    }
+
+    opacity: 0.4;
+  }
+
+  &.signup-form--signed-up {
+    .signup-form-state--signed-up {
+      display: block;
+    }
+  }
+
+  &.signup-form--already-signed-up {
+    .signup-form-state--already-signed-up {
+      display: block;
+    }
+  }
+
+  &.signup-form--error {
+    .signup-form-state--normal {
+      display: block;
+    }
+
+    .signup-form__error {
+      display: block;
+    }
+  }
+
+  &.signup-form--invalid-email {
+    animation: jiggle 0.2s;
+
+    .signup-form-state--normal {
+      display: block;
+    }
+
+    input[type="email"] {
+      border-color: $color-error;
+      border-width: 1px;
+    }
+  }
+}
+
+.signup-form__error {
+  display: none;
+  background: $color-white;
+  padding: 30px 20px;
+
+  color: $color-error;
+
+  border: $default-border;
+  border-radius: $border-radius;
+}
+
+.signup-form__success {
+  background: $color-white;
+
+  padding: 30px 20px;
+
+  border: $default-border;
+  border-radius: $border-radius;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: translateX(0);
+  }
+
+  16% {
+    transform: translateX(-10px);
+  }
+
+  49% {
+    transform: translateX(10px);
+  }
+
+  82% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
