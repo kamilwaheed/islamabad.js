@@ -2,4 +2,6 @@
 .sass-cache
 .tern-port
 node_modules
-styles/css
+static/styles/css
+email/build
+static/js/dist
