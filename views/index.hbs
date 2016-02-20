@@ -1,0 +1,65 @@
+<section class="page-section page-section--main">
+  <div class="page-section__content">
+    <h1 class="site-title">islamabad.js</h1>
+    <h2 class="site-sub-title">A Casual Dev Meetup in Islamabad</h2>
+
+    <p class="event-location-and-time">
+      <span class="event-location">4, Palm Street, AQ Khan Road, Bani Gala<br><strong>Islamabad</strong></span>
+      <span class="event-time">Saturday 27 February, 2016<br><strong>4PM - 6PM</strong></span>
+    </p>
+  </div>
+</section>
+
+<section class="page-section page-section--description">
+  <div class="page-section__content">
+    <p>An evening to spend together, find other developers doing great work, discuss problems, learn new things, make new friends and enjoy free coffee and snacks.</p>
+    <p>The meetup is intended for professionals only.</p>
+  </div>
+</section>
+
+<section class="page-section page-section--signup">
+  <div class="page-section__content">
+    <h1 class="page-section__title">Please sign up.</h1>
+    <p>Give us a promise (ha!) that you're coming.<br>You'll be garbage-collected if you don't come.</p>
+
+    {{> signupForm }}
+  </div>
+</section>
+
+<section class="page-section page-section--talks">
+  <div class="page-section__content">
+    <h1 class="page-section__title">Talks</h1>
+    <p>We've prepared some talks for breaking the ice.</p>
+
+    <ul class="talks">
+      {{#each talks}}
+        <li class="talk">
+          <h2 class="talk__title">{{ title }}</h2>
+          <span class="talk__by">
+            {{#if byUrl}}<a href="{{ byUrl }}" target="_blank">{{/if}}
+              {{ by }}
+              {{#if byUrl}}</a>{{/if}}
+          </span>
+
+          <p class="talk__description">{{p description }}</p>
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</section>
+
+<section class="page-section page-section--signup">
+  <div class="page-section__content">
+    <h1 class="page-section__title">Please sign up.</h1>
+    <p>Give us a promise (ha!) that you're coming.<br>You'll be garbage-collected if you don't come.</p>
+
+    {{> signupForm }}
+  </div>
+</section>
+
+<section class="page-section">
+  <div class="page-section__content">
+    <p>We are <a href="">Shakeel</a> and <a href="">Kamil</a> currently working at Quixel.</p>
+    <p><a href="">Reach out</a>.</p>
+  </div>
+</section>
