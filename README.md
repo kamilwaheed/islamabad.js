@@ -5,7 +5,8 @@
 npm install
 
 # then
-npm run dev # to run Browsersync for compiling SASS during development
+npm run dev # compile sources, run the server and watchers
 # or
-npm run build # to get freshly baked CSS for production
+npm run build # compile sources ready for production
+npm run start # to run the servers
 ```
